@@ -1,5 +1,5 @@
 # SC15-SVols-ICS
-Generates an ics file for Student Volunteers from Linkings exported data. Go to submissions.supercomputing.org and log in. Click the "My Schedule" tab, and in the window that opens, click "My Shifts". Then, in the bottom left corner, click export, and choose tab delimited. Save this to a file. This will be the input to this script. The second parameter is the desired output file. This should have an .ics extension.
+Generates an ics file for Student Volunteers from Linkings exported data. Go to submissions.supercomputing.org and log in. Click the "My Schedule" tab, and in the window that opens, click "My Shifts". Then, in the bottom right corner, click export, and choose tab delimited. Save this to a file. This will be the input to this script. The second parameter is the desired output file. This should have an .ics extension.
 
 # Dependencies
 pytz, ics
