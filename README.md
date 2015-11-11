@@ -8,11 +8,14 @@ These can be installed with pip.
 
 # Installing Dependencies on Linux
 pip install pytz
+
 pip install ics
 
 # Installing Dependencies on Mac OS X
 Install pip through either macports or homebrew: port install pip | brew install pip
+
 pip install pytz
+
 pip install ics
 
 # Installing Dependencies on Windows
