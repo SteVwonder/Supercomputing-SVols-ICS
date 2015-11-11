@@ -24,4 +24,6 @@ pip install ics
 Neither of the authors run Windows. If any of the other volunteers have instructions that work on Windows, open an issue or a pull request on GitHub and we will integrate them. In the meantime, this may be of help: [Windows Instructions](http://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
 
 # Usage
+```bash 
 python SVolICS.py --help
+```
