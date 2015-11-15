@@ -55,6 +55,10 @@ def fix_bad_times(time_str):
         time_str = "{}:00{}".format(match.group(1), match.group(2))
     return time_str
 
+def split_vol_times(vol_times):
+    split_re = re.compile(r'([0-9]+:[0-9]+[ap]m-[0-9]+:[0-9]+[ap]m)')
+    return [x for x in split_re.split(vol_times) if x != '']
+
 def convert_vol_time(vol_time, date):
     '''
      convert_vol_time()
@@ -136,7 +140,7 @@ def create_calendar(schedule):
         date = event['Day']
         description = "{} - {}".format(event['Type'], event['Tag'])
         if 'Volunteer' in event:
-            for volunteer_time in event['Volunteer'].split(','):
+            for volunteer_time in split_vol_times(event['Volunteer']):
                 begin_time, end_time = convert_vol_time(volunteer_time, date)
                 ics_event = ics.Event(name=event['Event'],
                                       begin=begin_time,
